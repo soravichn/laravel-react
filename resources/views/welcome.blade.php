@@ -11,7 +11,7 @@
 </head>
 
 <body>
-  <div id="example"></div>
+  <div id="app"></div>
 </body>
 <script src="/js/app.js"></script>
 

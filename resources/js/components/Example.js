@@ -1,7 +1,7 @@
 import axios from 'axios';
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import { Table, Button, Label, Input, Modal, ModalHeader, ModalBody, ModalFooter, FormGroup } from 'reactstrap';
+import { Table, Button, Label, Input, Modal, ModalHeader, ModalBody, FormGroup } from 'reactstrap';
 import '/css/style.css'
 
 export default class Example extends Component {
@@ -128,7 +128,7 @@ export default class Example extends Component {
     })
 
     return (
-      <div className="container">
+      <div>
         <Button color="primary" className="my-3 float-right" onClick={this.toggleNewTaskModal.bind(this)}>Add Task</Button>
         <Modal isOpen={this.state.newTaskModal} toggle={this.toggleNewTaskModal.bind(this)} backdrop='static' keyboard={false}>
           <ModalHeader toggle={this.toggleNewTaskModal.bind(this)}>Add Task</ModalHeader>
